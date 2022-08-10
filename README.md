@@ -19,3 +19,12 @@ $ git branch -M main
 1. Rest was as indicated by gihub when I created the TestRepo project :  
 $ git remote add origin git@github.com:rbadrinath/FCP.git  
 $ git push -u origin main
+
+1. A note on the .git/config in the project directory:  
+I found it was important to have this in there:
+~~~text
+[remote "origin"]
+	url = git@github.com:rbadrinath/TestRepo.git
+~~~
+Also make sure to configure the global .gitconfig file with email and name set.
+
